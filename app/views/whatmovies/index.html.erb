@@ -1,0 +1,26 @@
+<head>
+  <title>Showprofilepage</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+
+<h1>What's That Movie</h1>
+
+
+<p>
+<%= form_tag('/') do %>
+      <p>
+  <%= text_field_tag (:zipcode) %>
+  <%= submit_tag "Select", :name => nil %>
+      </p>
+<% end %>
+
+
+</P>
+<p><%= $lookup.inspect %> </p>
+<p><%= @response %></p>
+
+
+
